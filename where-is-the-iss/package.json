@@ -1,0 +1,15 @@
+{
+  "name": "where-is-the-iss",
+  "version": "1.0.0",
+  "description": "RealTime ISS Tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "author": "InsiderJanggo",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
