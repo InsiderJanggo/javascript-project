@@ -1,0 +1,16 @@
+{
+  "name": "random-dog-pic",
+  "version": "1.0.0",
+  "description": "Random Dog Pic Generator",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ."
+  },
+  "author": "InsiderJanggo",
+  "license": "MIT"
+}

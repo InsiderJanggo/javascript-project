@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dog Pic Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Random Dog Pic Generator</span>
+      </nav>
+        
+      <img src="" id="dog"/>
+    <script>
+        var API_URL = 'https://dog.ceo/api/breeds/image/random';
+        async function getDog() {
+            const res =  await fetch(API_URL);
+            const data = await res.json();
+            const {message} = data;
+            document.getElementById("dog").src = message;
+        }
+        getDog();
+    </script>
+</body>
+</html>
